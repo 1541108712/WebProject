@@ -1,0 +1,97 @@
+<!-- 标签里面有三种颜色  深蓝色是标签的名字  浅蓝色是属性名 黄色是属性内容 -->
+<!DOCTYPE html>
+<!-- 最外层是一个叫html的标签 代表整个网页 -->
+<html lang="en">
+<!-- head是头部标签 负责管网站上方网址之类的区域 -->
+
+<head>
+    <!-- 设置网站的编码格式 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 设置网站的标题 即标签页的名字 -->
+    <title>Document</title>
+</head>
+<!-- body是内容标签 负责管理页面 -->
+
+<body>
+    <!-- 如何解决网站刷新不同步的问题 vscode开启自动保存(文件--自动保存) -->
+
+    <!-- 标题标签6种 h1-h6 -->
+    <!-- 如何快速写标签 -->
+    <h1>一级标签最大</h1>
+    <h6>六级标签最小</h6>
+
+    <!-- 段落标签 -->
+    <p>
+        一个段落
+    </p>
+    <p>
+        <!-- b 加粗 em 倾斜 -->
+        <b>窗前明月光</b> <em>疑是地上霜</em>
+        <br> <!-- 换行 -->
+        举头望明月 低头思故乡
+    </p>
+
+    <!-- img 图片插入标签 src是引入图片 -->
+    <!-- width设置宽度 height设置高度 -->
+    <!-- alt 如果没有图片 则alt生效 -->
+    <img src="aaaa.png" alt="无图" width="300" height="400">
+    <br>
+
+    <!-- a 超链接 -->
+    <!-- href 目标 -->
+    <!-- target="_blank" 以新标签页的方式打开网页  -->
+    <a href="https://www.bilibili.com/" target="_blank">B站</a>
+
+    <!-- 列表标签 -->
+    <!-- ol 有序列表 -->
+    <ol>
+        <li>苹果</li>
+        <li>香蕉</li>
+        <li>西红柿</li>
+    </ol>
+
+    <!-- ul 无序列表 -->
+    <ul>
+        <li>老大</li>
+        <li>老二</li>
+        <li>老三</li>
+    </ul>
+
+    <!-- input 表单标签 type -->
+    <!-- type属性很关键 -->
+    <!-- text 文本框 -->
+    <input type="text">
+    <!-- password 密码框 -->
+    <input type="password">
+    <!-- radio 单选框 -->
+    <!-- 添加一个名字 让两个单选框关联起来 -->
+    <h1>性别</h1>
+    <input type="radio" name="gender"> 男
+    <input type="radio" name="gender"> 女
+
+    <h1>爱好</h1>
+    <!-- checkbox 复选框 取名字的目的是标识其是同一个组的 -->
+    <input type="checkbox" name="hobbies"> 羽毛球
+    <input type="checkbox" name="hobbies"> 乒乓球
+    <input type="checkbox" name="hobbies"> 篮球
+
+    <h1>按钮</h1>
+    <!-- button 按钮 -->
+    <button>这是一个按钮</button>
+
+    <h1>上传文件</h1>
+    <input type="file">
+
+    <h1>引用视频</h1>
+    <!-- video 视频标签 source 设置引用的视频内容 type是设置上传视频的格式 -->
+    <!-- width height 设置宽和高   controls 设置可播放 -->
+    <video width="400" height="400" controls>
+        <source src="b.mp4" type="video/mp4">
+    </video>
+
+
+</body>
+
+</html>
