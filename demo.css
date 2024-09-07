@@ -1,0 +1,20 @@
+/* 浏览器有个自带边距 一般写网页之前要把自带的边距清楚掉 */
+* {
+    /* 让所有标签内外边距恢复初始状态 */
+    padding: 0px;
+    margin: 0px;
+}
+
+.demo {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.func {
+    width: 200px;
+    height: 400px;
+    background-color: red;
+    /* 上下20 左右0 */
+    margin: 20px 0px;
+}
