@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            height: 500px;
+            /* display: flex 给弗雷设置flex布局 */
+            /* 自适应体现在宽度上，子类的宽度随着父类的变化而变化 */
+            display: flex;
+            /* 控制子类左右移动 */
+            justify-content: center;
+            /* 控制子类上下移动 */
+            align-content: center;
+            background-color: yellow;
+        }
+        .item_sub1 {
+            /* flex设置为2 自适应宽度 占2份 */
+            flex: 2;
+            height: 20px;
+            background-color: red;
+        }
+        .item_sub2 {
+            flex: 1;
+            height: 20px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item">
+        <div class="item_sub1"></div>
+        <div class="item_sub2"></div>
+    </div>
+</body>
+
+</html>

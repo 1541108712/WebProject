@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 让所有标签内外边距恢复初始状态 */
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .top {
+            width: 100%;
+            height: 80px;
+            background-color: red;
+            /* 冻结位置 类似Excel中的冻结单元格 */
+            position: fixed;
+            top: 0px;
+        }
+
+        .center {
+            width: 100%;
+            height: 2000px;
+            background-color: blue;
+            margin-top: 80px;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 80px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">头</div>
+    <div class="center">内容</div>
+    <div class="bottom">尾</div>
+</body>
+
+</html>

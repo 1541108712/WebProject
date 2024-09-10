@@ -17,4 +17,32 @@
     background-color: red;
     /* 上下20 左右0 */
     margin: 20px 0px;
+    margin-left: 80px;
+}
+
+/* 鼠标放在func这个盒子上时，展示的效果 */
+.func:hover{
+    background-color: blue;
+    color: pink;
+}
+
+.item{
+    width: 500px;
+    height: 300px;
+    background-color: purple;
+    margin-top: 40px;
+    /* 相对定位 子类就只能在父类的范围内移动*/
+    position: relative;
+}
+
+.item_sub{
+    width: 300px;
+    height: 150px;
+    background-color: yellow;
+    border-radius: 20px;
+    /* 移动谁就要给谁绝对定位 */
+    position: absolute;
+    /* 给一个移动的位置 右下角*/
+    right: 0px;
+    bottom: 0px;
 }
