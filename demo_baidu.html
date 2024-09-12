@@ -9,36 +9,44 @@
 </head>
 
 <style>
+    /* 剔除默认边距 */
     * {
         padding: 0px;
         margin: 0px;
     }
-    .demo{
+
+    /* 网页上方的工具栏 */
+    .demo {
         /* 宽度默认100% */
         height: 40px;
         display: flex;
     }
-    .left{
+
+    .left {
         flex: 1;
         /* background-color: blue; */
         display: flex;
         align-items: center;
         padding-left: 10px;
     }
-    .right{
+
+    .right {
         flex: 1;
         /* background-color: yellow; */
         display: flex;
         align-items: center;
         justify-content: flex-end;
     }
-    .leftdata{
+
+    .leftdata {
         margin: 0px 5px;
     }
-    .rightdata{
+
+    .rightdata {
         margin: 0px 5px;
     }
-    .bot{
+
+    .bot {
         margin: 10px 20px;
         /* 设置按钮的宽高 */
         padding: 5px 10px;
@@ -47,8 +55,67 @@
         border: none;
         border-radius: 10px;
     }
-    .bot:hover{
+
+    .bot:hover {
         color: #b3b8d2;
+    }
+
+    /* 下方内容区 */
+    .content {
+        width: 800px;
+        height: 800px;
+        background-color: yellow;
+        /* 左右居中 */
+        margin: auto;
+    }
+
+    /* 图片 */
+    .picture {
+        width: 400px;
+        height: 200px;
+        margin: auto;
+    }
+
+    /* 输入框和按钮 */
+    .search {
+        height: 60px;
+        background-color: pink;
+        margin-top: 80px;
+        display: flex;
+        /* 通过定位使相机图标 移动到输入框位置 */
+        position: relative;
+    }
+    /* 搜索框 */
+    .search_frame{
+        width: 80%;
+        height: 36px;
+        border: 2px solid #c4c7ce;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    /* 按钮 */
+    .search_bot{
+        width: 20%;
+        height: 40px;
+        background-color: #4e6ef2;
+        color: #fff;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .search_bot:hover{
+        background-color: #385ced;
+        /* 通过cursor: pointer 在鼠标移动到按钮上时 变成一个手 */
+        cursor: pointer;
+    }
+    /* 设置相机 */
+    .xj{
+        width: 25px;
+        height: 25px;
+        /* 绝对定位 */
+        position: absolute;
+        right: 20%;
+        top: 10px;
     }
 </style>
 
@@ -72,7 +139,24 @@
             <button class="bot">登录</button>
         </div>
     </div>
-    
+
+    <div class="content">
+        <!-- 搜索框上方图片 -->
+        <div class="picture">
+            <img src="百度一下.png" alt="百度一下" width="400" height="200">
+        </div>
+
+        <!-- 搜索框和按钮 -->
+        <div class="search">
+            <input type="text" class="search_frame">
+            <button class="search_bot">百度一下</button>
+            <img src="百度一下.png" alt="模拟一下相机图标" class="xj">
+        </div>
+
+        <!-- 下方新闻 -->
+        <div class="news"></div>
+    </div>
+
 </body>
 
 </html>

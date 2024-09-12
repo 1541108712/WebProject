@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+
+<body>
+    <!-- 在body标签里面 定义script标签 -->
+    <script>
+        // script标签写js代码
+        // console.log 跟python中的print一样打印在控制台
+        // 只要写一个log 就会提示出console.log
+        console.log('hello JS');
+
+        // alert 一打开网站就会出一个提示框
+        alert('打印在网站')
+
+        // 定义变量时与python类似 不需要指定类型
+        // JS中的数据类型：字符串(string) 数值(number) 布尔(boolean) 未定义(undefined) 空(null)
+        // 用let定义一个变量 let可以省略 但是一般js中会带上let 防止变量名重复
+        let a = 'abc'
+        let b = 10
+        let c = true
+        // undefined 不是开发人员用的 是系统用来提示 这个变量里没有值
+        let d
+        console.log('d = ' + d);
+        // 用来占位
+        let e = null
+        console.log('a = ' + a);
+        console.log(typeof a);
+        b += 20
+        console.log(b);
+
+        let value1 = 10;
+        let value2 = '10'
+        // 判断相等 双等于号(只判断值是否相等) 三等于号(值 + 类型)
+        console.log(value1 == value2) // true
+        console.log(value1 === value2) // false
+    </script>
+</body>
+
+</html>
