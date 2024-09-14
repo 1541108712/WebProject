@@ -64,7 +64,7 @@
     .content {
         width: 800px;
         height: 800px;
-        background-color: yellow;
+        /* background-color: yellow; */
         /* 左右居中 */
         margin: auto;
     }
@@ -79,7 +79,7 @@
     /* 输入框和按钮 */
     .search {
         height: 60px;
-        background-color: pink;
+        /* background-color: pink; */
         margin-top: 80px;
         display: flex;
         /* 通过定位使相机图标 移动到输入框位置 */
@@ -117,10 +117,34 @@
         right: 20%;
         top: 10px;
     }
+    /* 百度热搜 */
+    .news{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    a{
+        /* 把下划线去掉 */
+        text-decoration: none;
+        color: black;
+    }
+    ul{
+        /* 去除无序列表的黑点 */
+        list-style: none;
+        display: flex;
+        /* 如果一行太挤了 就换行 */
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    li{
+        width: 400px;
+        height: 40px;
+    }
 </style>
 
 <body>
 
+    <!-- 头部 -->
     <div class="demo">
         <div class="left">
             <div class="leftdata">新闻</div>
@@ -140,6 +164,7 @@
         </div>
     </div>
 
+    <!-- 中间内容 -->
     <div class="content">
         <!-- 搜索框上方图片 -->
         <div class="picture">
@@ -154,7 +179,25 @@
         </div>
 
         <!-- 下方新闻 -->
-        <div class="news"></div>
+        <div class="news">
+            <!-- 百度热搜 -->
+            <div class="hot_search">
+                <a href="" style="font-weight: 800;">百度热搜</a>
+            </div>
+
+            <!-- 换一换 -->
+            <div class="change_news">
+                <a href="" style="color: #c4c7ce;">换一换</a>
+            </div>
+        </div>
+        <!-- 无序列表 -->
+        <ul>
+            <li>新闻1新闻1新闻1新闻1</li>
+            <li>新闻2</li>
+            <li>新闻3新闻3新闻3</li>
+            <li>新闻4新闻4</li>
+        </ul>
+
     </div>
 
 </body>

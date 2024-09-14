@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // js中提供了两中定时器
+        // setTimeout(回调函数, 时间) 只执行一次
+        // 当到达某个时间(ms) 自动调用里面的函数
+        // 回调函数是一个不需要手动调用的函数
+        setTimeout(() => {console.log('调用setTimeout函数,2秒后')}, 2000)
+
+        // setInterval(回调函数, 时间间隔) 每隔x秒执行一次回调函数
+        setInterval(() => {console.log('调用setInterval,间隔2秒');}, 2000)
+
+    </script>
+</body>
+
+</html>
