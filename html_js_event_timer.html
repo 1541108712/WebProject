@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="stop_timer">点击停止定时器</button>
+
+    <script>
+        let timer = setInterval(() => {
+            console.log("我执行了");
+        }, 2000)
+
+        let stop_timer = document.querySelector(".stop_timer")
+        stop_timer.addEventListener("click", () => {
+            // 清除定时器
+            clearInterval(timer)
+        })
+    </script>
+</body>
+
+</html>

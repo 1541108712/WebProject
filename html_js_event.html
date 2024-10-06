@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 事件三要素：事件源、事件类型、事件处理程序 -->
+    <!-- 事件源：被触发的对象；事件类型：如何触发 什么事件；事件处理程序：触发事件后会发生什么 -->
+    <button class="btn">测试按钮</button>
+
+    <button class="mybtn">修改文字</button>
+    <div class="mydiv">今天是晴天</div>
+
+    <input type="text" class="myinput">
+    <h1 class="myh1">默认值</h1>
+
+    <button class="inc">点击加1</button>
+    <div class="inc1">0</div>
+
+    <script>
+        // 1.获取按钮
+        let btn = document.querySelector(".btn")
+        // 2.添加点击事件 为按钮增加事件监听
+        // addEventListener方法有两个参数：第一个 事件类型 click就是点击事件；第二个 回调函数 一旦触发事件 函数就会自动调用
+        btn.addEventListener("click", () => {
+            alert("触发按钮点击事件")
+        })
+
+        // 按钮click事件修改文字
+        let mydiv = document.querySelector(".mydiv")
+        let mybtn = document.querySelector(".mybtn")
+        mybtn.addEventListener("click", () => {
+            mydiv.innerHTML = "今天是雨天"
+        })
+
+        // 输入框表单change事件修改文字
+        let myinput = document.querySelector(".myinput")
+        let myh1 = document.querySelector(".myh1")
+        // change事件 当表单里面的值发生了变化 就会触发
+        myinput.addEventListener("change", (e) => {
+            myh1.innerHTML = e.target.value
+        })
+
+        let inc = document.querySelector(".inc")
+        let inc1 = document.querySelector(".inc1")
+        inc.addEventListener("click", () => {
+            // 自增会自动转换数据类型 隐式转换
+            inc1.innerHTML++
+            // 当数值等于5，让数字变成红色
+            if (inc1.innerHTML == 5) {
+                inc1.style.color = "red"
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- css中想修改div的样式：1.在style标签里面 2.class选择器和id选择器 -->
+    <!-- js中 套路差不多 叫法不同 标签（dom）相当于选择器 -->
+    <div id="hello"></div>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    <div class="div1"></div>
+
+    <div class="my_div"></div>
+    <div class="my_div"></div>
+    <p id="my_p"></p>
+    <span></span>
+    <span></span>
+    <script>
+        // 如果想在js中操作html标签，必须通过树的顶端来获取
+        // 1.通过id获取标签
+        // 如果有两个相同的id，则只能获取第一个
+        let a = document.getElementById("hello")
+        console.log(a);
+        console.log(document.getElementById("hello12"));
+
+
+        // 2.通过标签名获取，getElementsByTagName来获取标签 返回的是一个collection能够获取所有元素
+        let b = document.getElementsByTagName("p")
+        console.log(b);
+
+        // 3.通过类名获取对应的html元素 返回的是一个collection
+        let c = document.getElementsByClassName("div1")
+        console.log(c);
+
+        // 4.通过通用方法获取dom 与css相同 类选择器是以点(.)开头的 id选择器以井号(#)开头 标签选择器直接写标签
+        // querySelector只能获取一个
+        let d = document.querySelector(".my_div")
+        let e = document.querySelector("#my_p")
+        let f = document.querySelector("span")
+        console.log(d);
+        console.log(e);
+        console.log(f)
+        // querySelectorAll获取全部标签
+        console.log(document.querySelectorAll(".my_div"));
+        console.log(document.querySelectorAll("span"));
+    </script>
+</body>
+
+</html>

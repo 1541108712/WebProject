@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mydiv">床前明月光</div>
+    <input type="text" value="这是输入框写入的内容" class="myinput">
+
+    <script>
+        let mydiv = document.querySelector(".mydiv")
+        console.log(mydiv);
+        // 获取标签中的文字
+        console.log(mydiv.innerHTML);
+        mydiv.innerHTML = "疑是地上霜"
+
+        // innerHTML方法不适用于输入框 只能用于输入框以外的元素
+        let myinput = document.querySelector(".myinput")
+        console.log(myinput.innerHTML);
+        console.log(myinput.value);
+    </script>
+
+</body>
+
+</html>
